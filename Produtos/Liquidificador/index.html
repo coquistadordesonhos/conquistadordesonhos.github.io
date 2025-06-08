@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #4f8cff 0%, #38e6c5 100%);
+            margin: 0;
+            justify-content: center;
+            padding: 0;
+        }
+
+        header {
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin: 15px;
+            width: 260px;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+
+        .produtos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 1200px;
+        }
+
+        .produto:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 16;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .produto h3 {
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .produto p {
+            color: #555;
+            font-size: 0.98em;
+            margin-bottom: 15px;
+        }
+
+        .produto .preco {
+            color: #38e6c5;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .produto button {
+            background: linear-gradient(120deg, #4f8cff 0%, #38e6c5 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .voltar {
+            background: rgba(0, 0, 0, 0.24);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            margin: 20px;
+            width: 100px;
+            height: 40px;
+            display: flex;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+
+            .h1 {
+                margin-left: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="cordobotao" onclick="history.back('./Home/index.html')"
+            style="background: none; border: none; cursor: pointer;">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Voltar"
+                style="color:antiquewhite; width: 54px; height: 54px; vertical-align: middle;">
+
+
+            <h1 class="h1">Produtos em Destaque</h1>
+    </header>
+    <div class="produtos-container">
+        <div class="produto">
+            <h3>Liquidificador Mondial Turbo Power L-99 FB 220V</h3>
+            <img src="https://m.media-amazon.com/images/I/71KFAoTV+hL._AC_SL1500_.jpg"
+                alt="Liquidificador Mondial Turbo Power L-99 FB">
+            <p>
+                <span style="color:#007185; font-size:0.95em;">Marca: Mondial</span><br>
+                Liquidificador Mondial Turbo Power L-99 FB, 2,7L, 550W, 220V, Preto.<br>
+                3 velocidades + pulsar, copo super resistente, lâminas em aço inox, fácil de limpar.<br>
+                <span style="color:#B12704; font-weight:bold;">Em estoque</span>
+            </p>
+            <div class="preco">R$ 109,90</div>
+            <button onclick="window.location.href='https://amzn.to/4kZR4Yl'">Comprar</button>
+        </div>
+    </div>
+</body>
+
+</html>

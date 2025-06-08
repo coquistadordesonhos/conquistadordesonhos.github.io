@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #4f8cff 0%, #38e6c5 100%);
+        }
+
+        header {
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .produtos-container {
+            display: flex;
+            justify-content: center;
+            scale: 1.2;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 100%;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin: 15px;
+            width: 260px;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.2s;
+        }
+
+        .produto:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .produto h3 {
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .produto p {
+            color: #555;
+            font-size: 0.98em;
+            margin-bottom: 15px;
+        }
+
+        .produto .preco {
+            color: #38e6c5;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .produto button {
+            background: linear-gradient(120deg, #4f8cff 0%, #38e6c5 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .voltar {
+            background: rgba(0, 0, 0, 0.24);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            margin: 20px;
+            width: 100px;
+            height: 40px;
+            display: flex;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+
+            .h1 {
+                margin-left: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    <button class="cordobotao" onclick="history.back('./Home/index.html')" style="background: none; border: none; cursor: pointer;">
+        <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Voltar" style="color:antiquewhite; width: 54px; height: 54px; vertical-align: middle;">
+        
+        
+        <h1 class="h1">Produtos em Destaque</h1>
+    </header>
+    
+    <div class="produtos-container">
+        <div class="produto">
+            <h3>Playstation 5 </h3>
+            <img src="https://m.media-amazon.com/images/I/71ANJQTALWL._AC_SX679_.jpg" alt="Imagem do PlayStation 5"
+                class="w-full h-auto rounded-lg mb-6 shadow-md">
+            <p><span style="color:#007185; font-size:0.95em;">Marca: Sony</span><br>
+                Console PlayStation 5, SSD ultrarrápido, gráficos incríveis, controle sem fio DualSense.<br>
+                <span style="color:#B12704; font-weight:bold;">Em estoque</span>
+            </p>
+            
+
+            <button onclick="window.location.href='https://amzn.to/4kVPEhl'">Comprar</button>
+
+        </div>
+    </div>
+    <div>
+        <a href="Home/PaginaDoProduto/produto.html" style="color: #4f8cff; text-decoration: underline; cursor: pointer;">saiba mais sobre o produto</a>
+
+    </div>
+</body>
+
+</html>

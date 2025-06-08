@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Nome do Produto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(#4f8cff 0%, #38e6c5 100%);
+            color: #222;
+        }
+
+        .produto img {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto 16px auto;
+        }
+
+        .container {
+            image-rendering: auto;
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+        }
+
+        .produto-imagem {
+            width: 110%;
+            max-width: 350px;
+            display: block;
+            margin: 0 auto 24px auto;
+            border-radius: 8px;
+        }
+
+        .produto-titulo {
+            font-size: 2rem;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .produto-descricao {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            color: #444;
+            text-align: center;
+        }
+
+        .produto-preco {
+            font-size: 1.5rem;
+            color: #27ae60;
+            font-weight: bold;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .botao-comprar {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .botao-comprar:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <button class="cordobotao" onclick="history.back('./Home/index.html')"
+            style="background: none; border: none; cursor: pointer;">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Voltar"
+                style="color:antiquewhite; width: 54px; height: 54px; vertical-align: middle;">
+    </header>
+
+    <div class="container">
+        <button>
+            <div class="produtos-container">
+                <div class="produto">
+                    <h3>Playstation 5 </h3>
+                    <img src="https://m.media-amazon.com/images/I/71ANJQTALWL._AC_SX679_.jpg"
+                        alt="Imagem do PlayStation 5" class="w-full h-auto rounded-lg mb-6 shadow-md">
+                    <p><span style="color:#007185; font-size:0.95em;">Marca: Sony</span><br>
+                        Console PlayStation 5, SSD ultrarrápido, gráficos incríveis, controle sem fio DualSense.<br>
+                        <span style="color:#B12704; font-weight:bold;">Em estoque</span>
+                    </p>
+
+
+                    <button onclick="window.location.href='../Produtos/playstation5/index.html'"
+                        class="botao-comprar">Saiba mais</button>
+
+                </div>
+        </button>
+
+
+        <div class="container">
+
+            <button>
+                <div class="produtos-container">
+                    <div class="produto">
+                        <img src=" https://m.media-amazon.com/images/I/513Z1cDs6hL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                            alt="Fone de Ouvido" class="produto-imagem">
+                        <h3>Sobre este item</h3>
+                        <p>
+                            [Qualidade de som excepcional] Nossos verdadeiros fones de ouvido sem fio adotam a avançada
+                            tecnologia Bluetooth 5.3 para garantir uma conexão estável e rápida. O driver dinâmico LCP
+                            de 10
+                            mm integrado fornece o som mais natural e graves profundos.<br>
+                            [Cancelamento de Ruído Ativo] Esses fones de ouvido sem fio podem cancelar até 28dB de ruído
+                            de
+                            fundo. O modo ANC permite que você se concentre em suas músicas e conversas durante o
+                            trânsito,
+                            exercícios, bate-papos no escritório ou voando.<br>
+
+                            <button onclick="window.location.href='../Produtos/fonedeouvido/index.html'"
+                                class="botao-comprar">Saiba mais</button>
+                    </div>
+                </div>
+            </button>
+        </div>
+
+<div class="container">
+
+    <div class="produtos-container">
+        <div class="produto">
+            <h3>Liquidificador Mondial Turbo Power L-99 FB 220V</h3>
+            <img src="https://m.media-amazon.com/images/I/71KFAoTV+hL._AC_SL1500_.jpg" alt="Liquidificador Mondial Turbo Power L-99 FB">
+            <p>
+                <span style="color:#007185; font-size:0.95em;">Marca: Mondial</span><br>
+                Liquidificador Mondial Turbo Power L-99 FB, 2,7L, 550W, 220V, Preto.<br>
+                3 velocidades + pulsar, copo super resistente, lâminas em aço inox, fácil de limpar.<br>
+                <span style="color:#B12704; font-weight:bold;">Em estoque</span>
+            </p>
+            <div class="preco">R$ 109,90</div>
+            
+                            <button onclick="window.location.href='../Produtos/Liquidificador/index.html'"
+                                class="botao-comprar">Saiba mais</button>
+                    </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

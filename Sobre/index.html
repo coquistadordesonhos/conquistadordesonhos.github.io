@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#4f8cff 0%, #38e6c5 100%);
+
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            
+        }
+
+        .footer {
+            background: linear-gradient(120deg, #4f8cff 0%, #38e6c5 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            margin-top: 100px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 32px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.7;
+        }
+        .cordobotao{
+            color:#fff;
+        }
+        br {
+            margin-top: 200px;
+        }
+        .footer p {
+            align-items: center;
+            margin: 25px;
+            font-size: 0.9rem;
+            background: local;
+        }
+        /* Removido o .footer para o gradiente ocupar toda a página */
+    </style>
+</head>
+
+<body>
+     <button class="cordobotao" onclick="history.back('./Home/index.html')" style="background: none; border: none; cursor: pointer;">
+        <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Voltar" style="color:antiquewhite; width: 54px; height: 54px; vertical-align: middle;">
+        
+    </button>
+    <div class="container">
+        <h1>Sobre</h1>
+        <p>
+            Bem-vindo à nossa página! Aqui você encontra informações sobre nosso projeto, missão e valores.
+            Nosso objetivo é fornecer conteúdos de qualidade e ajudar nossos usuários a alcançar seus objetivos.
+        </p>
+        <p>
+            Se quiser saber mais ou entrar em contato, fique à vontade para nos enviar uma mensagem.
+        </p>
+        <div class="footer">
+            <p>&copy; 2023 Vende Bem. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Lucas Mendes</p>
+        </div>
+    </div>
+</body>
+<br>
+
+</html>
